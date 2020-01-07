@@ -52,3 +52,17 @@ canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
  */
 PlaygroundPage.current.liveView = canvas
 
+// set background colour
+canvas.backgroundColour = Color.grey
+
+// draw red circle
+canvas.fillColour = Color.red
+canvas.drawEllipse(at:Point(x:200, y:200), width: 66...166, height:66...166)
+
+// draw blue circle
+canvas.fillColour = Color.blue
+canvas.drawEllipse(at:Point(x:350, y:200), width: 66...166, height:66...166)
+
+open func drawText(message: String, at: Point, size: Int = 24, kerning: Float = 0.0)
+
+PlaygroundPage.current.liveView = canvas
