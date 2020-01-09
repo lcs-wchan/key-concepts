@@ -110,7 +110,7 @@ canvas.drawText(message: "halifax", at: Point(x:275, y:560), size: 10, kerning: 
 canvas.drawText(message: "nova scotia", at: Point(x:275, y:545), size: 10, kerning: 0.0)
 
 // type text solgan
-canvas.drawText(message: "solgan", at: Point(x:155, y:450), size: 72, kerning: 0.0)
+canvas.drawText(message: "sloan", at: Point(x:155, y:425), size: 94, kerning: 0.0)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
