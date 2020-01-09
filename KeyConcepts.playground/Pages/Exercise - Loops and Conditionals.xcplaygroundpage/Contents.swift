@@ -38,6 +38,79 @@ let neonGreen = Color(hue: 107, saturation: 61, brightness: 93, alpha: 100)
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 
+
+// draw orange
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = deepOrange
+canvas.drawRectangle(at:Point(x:0, y:0), width: 400, height: 600, anchoredBy: AnchorPosition.bottomLeft, borderWidth: 0)
+
+// draw blue line
+// line width
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+
+canvas.defaultLineWidth = 50
+
+// loop
+for x in stride(from:25, through: 350, by: 100) {
+   canvas.lineColor = lightBlue
+    
+    // draw line
+    
+    canvas.drawLine(from: Point(x:x, y:0), to: Point(x:x, y:350))
+    
+}
+
+// draw green line
+// line width
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+
+canvas.defaultLineWidth = 50
+
+// loop
+for x in stride(from:75, through: 400, by: 100) {
+   canvas.lineColor = neonGreen
+
+    
+    // draw line
+    
+    canvas.drawLine(from: Point(x:x, y:75), to: Point(x:x, y:400))
+    
+}
+
+canvas.textColor = Color.white
+// type text Saturday
+canvas.drawText(message: "Saturday", at: Point(x:17, y:575), size: 10, kerning: 0.0)
+
+
+// type text december 19 1992
+canvas.drawText(message: "december 19 1992", at: Point(x:17, y:560), size: 10, kerning: 0.0)
+
+// type text 9 pm
+canvas.drawText(message: "9 pm", at: Point(x:17, y:545), size: 10, kerning: 0.0)
+
+// type text with
+canvas.drawText(message: "with", at: Point(x:117, y:575), size: 10, kerning: 0.0)
+
+// type text trush hermit
+canvas.drawText(message: "trush hermit", at: Point(x:117, y:560), size: 10, kerning: 0.0)
+
+// type text the quahogs
+canvas.drawText(message: "the quahogs", at: Point(x:117, y:545), size: 10, kerning: 0.0)
+
+// type text camaro's cafe
+canvas.drawText(message: "camaro's cafe", at: Point(x:275, y:575), size: 10, kerning: 0.0)
+
+// type text halifax
+canvas.drawText(message: "halifax", at: Point(x:275, y:560), size: 10, kerning: 0.0)
+
+// type text nova scotia
+canvas.drawText(message: "nova scotia", at: Point(x:275, y:545), size: 10, kerning: 0.0)
+
+// type text solgan
+canvas.drawText(message: "solgan", at: Point(x:155, y:450), size: 72, kerning: 0.0)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
