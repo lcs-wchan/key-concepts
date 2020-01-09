@@ -52,31 +52,57 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
  */
 PlaygroundPage.current.liveView = canvas
 
-//// set background colour
-//open func drawRectangle(at:Point(x:0, y:0), width: 400, height: 600, anchoredBy: AnchorPosition = AnchorPosition.bottomLeft, borderWidth: Int = 1)
+// set background colour
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = grey
+canvas.drawRectangle(at:Point(x:0, y:0), width: 400, height: 600, anchoredBy: AnchorPosition.bottomLeft, borderWidth: 0)
 
 
  //draw red circle
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
-canvas.fillColor = Color.red
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 200, height: 200, borderWidth: 100)
+canvas.borderColor = Color.red
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 266, height: 266, borderWidth: 100)
 
 // draw blue circle
-//canvas.fillColour = Color.blue
-//canvas.drawEllipse(at:Point(x:350, y:200), width: 66...166, height:66...166)
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.borderColor = lightBlue
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 266, height: 266, borderWidth: 100)
 
 // type text friday
-canvas.drawText(message: "Friday", at: Point(x:33, y:575), size: 24, kerning: 0.0)
-//
-//// type text december 4 1987
-//open func drawText(message: december 4 1987, at: Point(x:33, y:550), size: Int = 24, kerning: Float = 0.0)
-//
-//// type text 8 pm show
-//open func drawText(message: 8 pm show, at: Point(x:33, y:525), size: Int = 24, kerning: Float = 0.0)
-//
-//// type text the jesus and the merry chain
-//open func drawText(message: "the jesus and the merry chain", at: Point(x:33, y:450), size: Int = 96, kerning: Float = 1.0)
-//
+canvas.drawText(message: "Friday", at: Point(x:17, y:575), size: 10, kerning: 0.0)
+
+// type text december 4 1987
+canvas.drawText(message: "december 4 1987", at: Point(x:17, y:560), size: 10, kerning: 0.0)
+
+// type text 8 pm show
+canvas.drawText(message: "8 pm show", at: Point(x:17, y:545), size: 10, kerning: 0.0)
+
+// type text with
+canvas.drawText(message: "with", at: Point(x:117, y:575), size: 10, kerning: 0.0)
+
+// type text soocial distortion
+canvas.drawText(message: "soocial distortion", at: Point(x:117, y:560), size: 10, kerning: 0.0)
+
+// type text and opal
+canvas.drawText(message: "and opal", at: Point(x:117, y:545), size: 10, kerning: 0.0)
+
+// type text hollywood pallidium
+canvas.drawText(message: "hollywood pallidium", at: Point(x:275, y:575), size: 10, kerning: 0.0)
+
+// type text 6215 sunset blvd,
+canvas.drawText(message: "6215 sunset blvd,", at: Point(x:275, y:560), size: 10, kerning: 0.0)
+
+// type text los angeles, california
+canvas.drawText(message: "los angeles, california", at: Point(x:275, y:545), size: 10, kerning: 0.0)
+
+// type text the jesus
+canvas.drawText(message: "the jesus", at: Point(x:17, y:450), size: 42, kerning: 0.0)
+
+// type text and marry chain
+canvas.drawText(message: "and marry chain", at: Point(x:17, y:405), size: 42, kerning: 0.0)
+
 
 PlaygroundPage.current.liveView = canvas
