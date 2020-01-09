@@ -35,15 +35,15 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 
-// No border, has a fill
-canvas.drawShapesWithBorders = false
-canvas.drawShapesWithFill = true
-canvas.drawEllipse(at: Point(x: 100, y: 100), width: 50, height: 75)
-
-// Has a border, no fill
-canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
+//// No border, has a fill
+//canvas.drawShapesWithBorders = false
+//canvas.drawShapesWithFill = true
+//canvas.drawEllipse(at: Point(x: 100, y: 100), width: 50, height: 75)
+//
+//// Has a border, no fill
+//canvas.drawShapesWithBorders = true
+//canvas.drawShapesWithFill = false
+//canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
 
 
 /*:
@@ -52,17 +52,31 @@ canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
  */
 PlaygroundPage.current.liveView = canvas
 
-// set background colour
-canvas.backgroundColour = Color.grey
+//// set background colour
+//open func drawRectangle(at:Point(x:0, y:0), width: 400, height: 600, anchoredBy: AnchorPosition = AnchorPosition.bottomLeft, borderWidth: Int = 1)
 
-// draw red circle
-canvas.fillColour = Color.red
-canvas.drawEllipse(at:Point(x:200, y:200), width: 66...166, height:66...166)
+
+ //draw red circle
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.fillColor = Color.red
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 200, height: 200, borderWidth: 100)
 
 // draw blue circle
-canvas.fillColour = Color.blue
-canvas.drawEllipse(at:Point(x:350, y:200), width: 66...166, height:66...166)
+//canvas.fillColour = Color.blue
+//canvas.drawEllipse(at:Point(x:350, y:200), width: 66...166, height:66...166)
 
-open func drawText(message: String, at: Point, size: Int = 24, kerning: Float = 0.0)
+// type text friday
+canvas.drawText(message: "Friday", at: Point(x:33, y:575), size: 24, kerning: 0.0)
+//
+//// type text december 4 1987
+//open func drawText(message: december 4 1987, at: Point(x:33, y:550), size: Int = 24, kerning: Float = 0.0)
+//
+//// type text 8 pm show
+//open func drawText(message: 8 pm show, at: Point(x:33, y:525), size: Int = 24, kerning: Float = 0.0)
+//
+//// type text the jesus and the merry chain
+//open func drawText(message: "the jesus and the merry chain", at: Point(x:33, y:450), size: Int = 96, kerning: Float = 1.0)
+//
 
 PlaygroundPage.current.liveView = canvas
